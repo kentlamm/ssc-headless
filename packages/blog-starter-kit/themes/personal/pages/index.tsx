@@ -59,6 +59,7 @@ export default function Index({ publication, initialPosts, initialPageInfo }: Pr
 			<Layout>
 				<Head>
 					<title>{publication.title}</title>
+              <base target="_blank">
 					<meta
 						name="description"
 						content={
