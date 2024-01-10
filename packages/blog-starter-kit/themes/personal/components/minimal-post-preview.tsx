@@ -18,10 +18,10 @@ export const MinimalPostPreview = ({ title, date, slug, commentCount }: Props) =
 	return (
 		<section className="flex flex-col items-start gap-1">
 			<h2 className="text-lg leading-tight tracking-tight text-black dark:text-white">
-				<Link href={postURL}>{title}</Link>
+				<Link href={postURL} target="blank">{title}</Link>
 			</h2>
 			<p className="flex flex-row items-center gap-2">
-				<Link href={postURL} className="text-sm text-neutral-600 dark:text-neutral-400">
+				<Link href={postURL} className="text-sm text-neutral-600 dark:text-neutral-400" target="blank">
 					<DateFormatter dateString={date} />
 				</Link>
 				{commentCount > 2 && (
